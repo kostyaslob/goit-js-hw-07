@@ -44,6 +44,7 @@ button {
   outline: none
 }
 
+
 /* Task-1 */
 
 #categories {
@@ -135,6 +136,7 @@ button {
 #name-input:hover,
 #name-input:focus {
   border-color: #000;
+  
 }
 
 h1 {

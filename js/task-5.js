@@ -11,6 +11,8 @@ button.addEventListener("click", () => {
   const changeColor = getRandomHexColor();
   document.body.style.backgroundColor = changeColor;
   span.textContent = changeColor;
+
+  button.blur();
 });
 
 

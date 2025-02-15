@@ -24,7 +24,8 @@ const destroyButton = document.querySelector("[data-destroy]");
   }
 
   function destroyBoxes() {
-    boxesContainer.innerHTML = ""; 
+    boxesContainer.innerHTML = "";
+    destroyButton.blur();
   }
 
   createButton.addEventListener("click", () => {
@@ -34,7 +35,8 @@ const destroyButton = document.querySelector("[data-destroy]");
       destroyBoxes(); 
       createBoxes(amount);
       input.value = "";
-    }    
+    }
+    createButton.blur();
   });
 
   destroyButton.addEventListener("click", destroyBoxes);
