@@ -29,12 +29,12 @@ const gallery = document.querySelector(".gallery");
 
 const markup = images.map(image => {
   const item = document.createElement("li");
-  item.style.listStyle = "none";
 
   const img = document.createElement("img");
   img.src = image.url;
   img.alt = image.alt;
-  img.width = 400;
+  img.width = 360;
+  img.height = 300;
 
   item.append(img);
 
@@ -43,6 +43,3 @@ const markup = images.map(image => {
 
 gallery.append(...markup);
 
-gallery.style.display = "flex";
-gallery.style.flexWrap = "wrap";
-gallery.style.gap = "16px";

@@ -18,7 +18,6 @@ const destroyButton = document.querySelector("[data-destroy]");
       box.style.width = `${size}px`;
       box.style.height = `${size}px`;
       box.style.backgroundColor = getRandomHexColor();
-      box.style.margin = "5px";
       boxes.push(box); 
     }
     boxesContainer.append(...boxes);
@@ -33,19 +32,9 @@ const destroyButton = document.querySelector("[data-destroy]");
 
     if (amount >= 1 && amount <= 100) {
       destroyBoxes(); 
-      // boxesContainer.innerHTML = ""; 
       createBoxes(amount);
       input.value = "";
-    }
-
-  // if (isNaN(amount) || amount < 1 || amount > 100) {
-  //   return; 
-  // }
-
-  // destroyBoxes();
-  // createBoxes(amount);
-  // input.value = "";
-    
+    }    
   });
 
   destroyButton.addEventListener("click", destroyBoxes);
